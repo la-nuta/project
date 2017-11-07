@@ -1,0 +1,11 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "dependencies": {
+    "gulp-less": "^3.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "less": "^2.7.3"
+  }
+}
