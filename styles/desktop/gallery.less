@@ -383,7 +383,6 @@ html, body {
       font-family: 'Arimo', sans-serif;
       height: 100%;
       width: 100%;
-      //background-color: #9d9d9d;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -396,10 +395,7 @@ html, body {
         display: none;
         top: 0;
         left: 0;
-        //button.next, button.previous {
-        //  display: none;
-        //
-        //}
+
 
         &.act {
           height: 100%;
@@ -439,7 +435,13 @@ html, body {
             &.visible{
               display: block;
             }
-
+            &:focus {
+              outline: none;
+              box-shadow: 0 0 10px 3px @lightGreyColor;
+            }
+            &:focus {
+              box-shadow: 0 0 10px 1px @lightGreyColor;
+            }
           }
         }
       }

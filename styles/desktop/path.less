@@ -17,7 +17,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("../../gallery/images/png/Caminito-13.png");
 
   #content {
     display: grid;
@@ -34,6 +33,7 @@ html, body {
       width: 100%;
       //.grayGradient(darken(@lightMint, 40%), darken(@lightMint, 10%));
       position: relative;
+      background-image: url("../../gallery/images/png/Caminito-13.png");
 
       display: grid;
       grid-template-areas: "logo h1button";
@@ -394,15 +394,13 @@ html, body {
       font-family: 'Arimo', sans-serif;
       height: 100%;
       width: 100%;
-
-
-      div {
-        width: 400px;
+div {
+        width: 80%;
         margin: 20px auto;
-        background-color: rgba(44, 44, 44, 0.5);
+        background-color: rgba(144, 144, 144, 0.5);
         padding: 10px;
         border-radius: 10px;
-
+box-shadow: 0 0 10px 5px @lightGreyColor;
 
         h1 {
           color: red;
@@ -420,8 +418,8 @@ html, body {
         }
 
         P{
-          margin: 15px auto;
-          color: white;
+          margin: 20px auto;
+          color: #2f2f2f;
           text-align: center;
         }
       }
