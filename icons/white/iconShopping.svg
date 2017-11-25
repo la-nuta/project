@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="24" height="21">
+    <path d="M115,170
+    a 30 45 0 0 1 30 -30 h95
+    a 125 110 0 1 1 320 0
+    h95 a 30 45 0 0 1 30 30
+    l 95 485 a 55 45 0 0 1 -55 40 h-650 a 55 45 0 0 1 -55 -40 l 95 -485
+    m207,50 a 100 100 0 1 1 160 0 h-190
+    m-133,142 h 482 l 40 210  a 55 45 0 0 1 -55 40 h -454 a 55 45 0 0 1 -55 -40
+" fill-rule="evenodd" fill="#ffffff" id="shopping">
+    </path>
+</svg>

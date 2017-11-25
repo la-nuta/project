@@ -5,64 +5,249 @@
     <meta name="viewport" content="width=device-width">
     <title> Caminito del Rey </title>
     <link rel="stylesheet" href="styles/styleMain.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Play:400,700&subset=cyrillic');
+    </style>
+    <script defer src="https://use.fontawesome.com/29bd6817a0.js"></script>
+
 </head>
 <body>
+
 <div id="content">
     <header id="header">
-        <h1> Королевская тропа </h1>
+        <!--<a href="/index.html" class="logo">-->
+        <img src="Logo.svg" width="255px" height="255px">
+        <!--</a>-->
+        <!--<h1> Королевская тропа </h1>-->
+
+        <button class="booking" type="button">
+            <a href="./booking/index.html">
+                Забронировать визит
+            </a>
+        </button>
+
+        <a href="#scroll" rel="scroll">
+            <button class="down" type="button">
+                >>
+
+            </button>
+        </a>
+
+
     </header>
+
+
     <nav id="navigation">
-        <ul class="menu">
-            <li>
-                <a href="index.html">  Общая информация </a>
-            </li>
-            <li>
-                <a href="./timetable/index.html"> На тропе </a>
+        <div class="menu">
+            <button type="button" id="main">
+                <span class="menu-item first main">
+                    Ретроспектива
+                </span>
+                <a href="#scroll" class="menu-item first main">
+                    Ретроспектива
+                </a>
+
+            </button>
+            <button type="button" class="path">
+                <span class="menu-item path"> Визиты тропы </span>
+                <a href="./path/index.html" class="menu-item path"> Визиты тропы </a>
                 <ul class="sub-menu">
-                    <li><a href="#"> Правила посещения </a></li>
-                    <li><a href="#"> Кафе и сувениры </a></li>
+                    <li>
+                        <a href="./path/index.html#rules" rel="rules">
+                            Правила посещения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./path/index.html#cafeAndShopping" rel="cafeAndShopping">
+                            Кафе и сувениры
+                        </a>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <a href="./timetable/index.html"> Как добраться </a>
+            </button>
+            <button type="button" class="way">
+                <span class="menu-item way">
+                    Как добраться
+                </span>
+                <a href="./wayToGet/index.html" class="menu-item way"> Как добраться </a>
                 <ul class="sub-menu">
-                    <li><a href="#"> На авто </a></li>
-                    <li><a href="#"> Транспорт </a></li>
+                    <li>
+                        <a href="./wayToGet/index.html#car" rel="car">
+                            Авто
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./wayToGet/index.html#train" rel="train">
+                            Поезд
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./wayToGet/index.html#bus" rel="bus">
+                            Автобус
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./wayToGet/index.html#taxi" rel="taxi">
+                            Такси
+                        </a>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <a href="./gallery/index.html">
-                     Галерея </a>
-                <!--<ul>-->
-                <!--<li><a href="#">Sub item 1</a></li>-->
-                <!--<li><a href="#">Sub item 2</a></li>-->
-                <!--<li>-->
-                <!--<a href="#">Sub item 3</a>-->
-                <!--<ul>-->
-                <!--<li><a href="#">Sub item 1</a></li>-->
-                <!--<li><a href="#">Sub item 2</a></li>-->
-                <!--<li><a href="#">Sub item 3</a></li>-->
-                <!--<li><a href="#">Sub item 4</a></li>-->
-                <!--</ul>-->
-                <!--</li>-->
-                <!--<li><a href="#">Sub item 4</a></li>-->
-                <!--<li><a href="#">Sub item 5</a></li>-->
-                <!--</ul>-->
-            </li>
-            <li>
-                <a href="./timetable/index.html"> Время работы </a>
-            </li>
-            <li>
-                <a href="#"> Полезные ссылки </a>
-            </li>
-        </ul>
+            </button>
+
+
+            <button type="button" class="gallery">
+                <span class="menu-item gallery"> Фотогалерея </span>
+                <a href="./gallery/index.html" class="menu-item gallery"> Фотогалерея </a>
+            </button>
+
+            <button type="button" class="timetable">
+                <span class="menu-item last timetable"> Время работы </span>
+                <a href="./timetable/index.html" class="menu-item last timetable"> Время работы </a>
+            </button>
+        </div>
     </nav>
     <section class="main-content">
+        <div id="scroll"></div>
+        <h1 id="path"> Королевская тропа </h1>
+        <img src="./gallery/images/small/Caminito-10.jpg" height="250" width="250" class="left"/>
+        <p>
+            Ущелье Эль Чорро знаменито <strong>Королевской тропой (El Caminito del Rey)</strong>, одной из самых
+            захватывающих и самых опасных пешеходных троп в мире.
+            Через известняковый каньон Эль Чорро (El Chorro) проходит река Гвадалорсе (Guadalhorce).
+            Королевская тропа была создана в начале XX века (в 1905 году) как вспомогательный путь для рабочих,
+            занятых на строительстве гидротехнического сооружения (плотины) Конде дель Гвадалорсе,
+            с одной стенки каньона на другую и представляет собой сооружение, состоящее из бетона и вбитых в скалу
+            костылей
+            и железнодорожных рельсов. Тропа расположена между водопадами Чорро и Гайтанехо в ущелье Эль Чорро около
+            деревеньки Алоры в Малаге,
+            провинции Испании.
+        </p>
+        <p>
+            Название тропы связано с тем, что в мае 1921 года по этим местам проходил король Альфонсо XIII,
+            направлявшийся на церемонию открытия плотины Конде на реке Гвадалорсе и в честь этого события тропинка
+            получила название «El Caminito del Rey» — Тропинка короля.
+
+        </p>
+        <p>Эль Чорро можно перевести как "рывок", это самое подходящие слово для описания того, как течет вода сквозь
+            узкие ущелья и овраги.
+            Разница в высоте между двумя главными водохранилищами, созданными человеком в разных концах ущелья,
+            предоставляет
+            уникальную возможность для развития ГЭС. В то время это была почти революционная концепция. Реки, озера,
+            каньоны, и деревья стали торговой маркой
+            Makinodromo, а сама эта местность известна как один из лучших альпинистских районов в Европе.
+            Также здесь очень популярны прогулки на горных велосипедах, и кемпинги.
+        </p>
+        <img src="./gallery/images/small/Caminito-6.jpg" height="250" width="250" class="right"/>
+
+<p>        Гениальное сооружение, но тем не менее, самой привлекательной частью этой конструкции является именно сам путь,
+        Эль-Каминито-дель-Рей, который проходит вдоль всего ущелья. Говорят, первоначальная конструкция была возведена
+        моряками, которым приходилось лазить и работать в подвешенном состоянии над пустотой. Некоторые источники 
+        (неподтвержденные) заявляют, что заключенные, осужденные на смертную казнь, так же участвовали в строительных
+        работах и выполняли самые опасные задания.</p>
+
+        <p>Тропа была построена с использованием песка и цемента, а удерживается на месте благодаря металлическим кронштейнам.
+        Так же без лишних излишеств были использованы железнодорожные рельсы. 
+
+        Такая опасность и риск стали материалом для множества легенд и привлекли многих альпинистов и любителей адреналина
+        со всего мира. </p>
+
+
+        <p>
+            Королевская тропа была заброшена и не поддерживалась долгие годы и потому в конце 1990х стала известна как
+            <strong>наиболее
+                опасная пешеходная тропа в мире</strong>.
+            Несмотря на то, что официально Королевская тропа была закрыта для посещений, многие люди,
+            не боящиеся высоты, всё же проходили её, применяя страховочное оборудование в виде фала с карабином,
+            который пристёгивался к стальным страховочным тросам, специально протянутым вдоль самых опасных мест пути,
+            где не было поручней.
+        </p>
+        <p>
+            Этот в прямом смысле головокружительный маршрут был официально закрыт после гибели на нем четверых
+            экскурсантов в 1999-2000 гг.
+            С тех пор состояние тропы ухудшалось и, теоретически, проходить по ней нельзя. Однако ни запрещающие
+            плакаты,
+            ни штрафы не в силах удержать множество любителей экстремального туризма.
+        </p>
+        <p> В 2006 году правительство Андалусии разработало проект ремонта этой дороги, для её последующего открытия как
+            официального туристического маршрута. Бюджет проекта составлял 7 млн. евро.
+        </p>
+        <img src="./gallery/images/small/Caminito-27.jpg" height="250" width="250" class="left"/>
+
+        <p>
+        Провинциальный совет Малаги начал восстанавливать эту дорогу в марте 2014 года, и в начале 2015 года
+            Королевская тропа открылась вновь.
+            Королевская тропа заканчивается в небольшой деревушке Эль-Чорро (возле Алоры), которая также является одним
+            из главных пунктов скалолазания в Европе.
+            Наиболее впечатляющим участком считается вход в ущелье Гаитанес.
+            Восстановительные работы затронули все четыре километра дороги, в частности, 1,2-километровый пешеходный
+            мост, висящий среди практически вертикальных стен,
+            для чего потребовалась помощь специальных альпинистов и вертолетов. Мост был построен в начале ХХ века
+            Гидроэлектрическим обществом Эль-Чорро
+            для работ по содержанию плотин Гайтанехо и Чорро.
+
+        </p>
+
+        <p> Тропа была открыта 29 марта 2015 года после реконструкции и упомянута <strong>в списке лучших новых
+            достопримечательностей путеводителя</strong>
+            <a href="https://www.lonelyplanet.com/video/discover-the-caminito-del-rey-spain/v/vid/418"
+               rel="lonely planet"
+               target="_blank">Lonely planet</a>. Что же представляет собой тропа в настоящее время? Королевская тропа
+            (El Caminito del Rey) сегодня –  пешеходная дорожка, протяженностью почти 4 километра и шириной всего в один
+            метр,
+            построенная буквально на стенах ущелья Гаитанес в Эль-Чорро, в провинции Малага.
+            Тропа проложена в отвесных скалах на высоте ста метров над рекой Гвадалорсе. В настоящее время Королевская
+            тропа полностью безопасна и открыта для посещения.
+        </p>
+        <!--<img src="./gallery/images/small/Caminito-8.jpg" height="250" width="250" class="left"/>-->
+
+        <!--<img src="./gallery/images/small/Caminito-6.jpg" height="250" width="250" class="right"/>-->
+
+        <!--<img src="./gallery/images/small/Caminito-2.jpg" height="250" width="250" class="left"/>-->
+
+
+        <!--<a href="https://www.lonelyplanet.com/travel-tips-and-articles/the-worlds-hottest-new-travel-experiences-for-2015/40625c8c-8a11-5710-a052-1479d27617b4"> </a>-->
+
 
     </section>
-    <footer id="footer1"></footer>
-    <footer id="footer2"></footer>
+    <footer id="footer1">
+        <ul class="social-wrapper">
+            <li class="one-button">
+                <a class="fa fa-twitter fa-2x" href="https://www.twitter.com" rel="twitter"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-facebook fa-2x" href="https://www.facebook.com" rel="facebook"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com" rel="linkedin"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-youtube fa-2x" href="https://www.youtube.com" rel="youtube"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-github fa-2x" href="https://www.github.com" rel="github"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-instagram fa-2x" href="https://www.instagram.com" rel="instagram"
+                   target="_blank"></a>
+            </li>
+        </ul>
+
+        <span id="copyright">&copy Anna Marfel, 2017</span>
+
+    </footer>
+    <footer id="footer2">
+        <form action="http://google.com/search" method="get" class="search">
+            <label for="search"> Найти </label> <input type="search" name="q" id="search" placeholder=" в Google...">
+
+        </form>
+    </footer>
 
 </div>
+
+
 </body>
 </html>

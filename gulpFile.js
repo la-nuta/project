@@ -1,6 +1,6 @@
-var less = require('gulp-less');
-var path = require('path');
-var gulp = require('gulp');
+let less = require('gulp-less');
+let path = require('path');
+let gulp = require('gulp');
 
 gulp.task('less', function () {
     return gulp.src('./less/**/*.less')
@@ -8,4 +8,4 @@ gulp.task('less', function () {
             paths: [ path.join(__dirname, 'less', 'includes') ]
         }))
         .pipe(gulp.dest('./styles'));
-})
+});

@@ -1,0 +1,510 @@
+
+@lightMint: darken(@lightGreyColor, 10%);
+@mint: #fbfbfb;
+@lightGreyColor: darken(#ffffff, 10%);
+@middleGreyColor: darken(@lightGreyColor, 20%);
+@darkGreyColor: darken(@lightGreyColor, 40%);
+.grayGradient(@color1, @color2) {
+  background-image: linear-gradient(to right, @color1, @color2);
+}
+
+;
+
+//font-family: 'Play', sans-serif;
+//font-family: 'Arimo', sans-serif;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: @lightGreyColor;
+
+
+  #content {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: "header header header header" "nav section section section" "footer1 footer1 footer1 footer1";
+    grid-template-rows: 10fr 1fr 100px;
+    grid-template-columns: 50px 1fr 1fr 1fr;
+    background-color: @lightGreyColor;
+
+    #header {
+      grid-area: header;
+      margin: 0;
+      min-height: 100%;
+      width: 100%;
+      //text-align: center;
+      display: grid;
+      grid-template-areas: "nav1 foto1 foto2 foto3 aside" "nav1 foto4 logo foto5 aside" "nav1 foto6 gap1 foto7 aside" "nav1 foto8 button foto9 aside" "nav1 foto10  gap5 gap2 aside" "nav1 foto11  down gap3 aside" "nav1 foto12  gap6 gap4 aside";
+      grid-template-rows: 1fr 250px 1fr 50px 2fr 50px 1fr;
+      grid-template-columns: 50px 1fr 250px 1fr 50px;
+      background-image: url("../../gallery/images/png/Caminito-11.png");
+
+      //.grayGradient(darken(@lightMint, 40%), darken(@lightMint, 10%));
+      position: relative;
+      //flex-wrap: wrap;
+      //flex-direction: column;
+      //justify-content: space-between;
+      //background-image: linear-gradient(to right, darken(@lightMint, 50%), darken(@lightMint, 10%));
+
+      img {
+        border: none;
+        grid-area: logo;
+        grid-auto-rows: minmax(250px, auto);
+        grid-auto-columns: minmax(250px, auto);
+        margin: auto;
+      }
+
+      button.booking {
+        grid-area: button;
+        position: relative;
+        perspective: 500px;
+        grid-auto-rows: minmax(70px, auto);
+        grid-auto-columns: minmax(270px, auto);
+        width: 270px;
+        height: 45px;
+        border-radius: 10px;
+        padding: 0;
+        margin: auto;
+
+        font-weight: bold;
+        background-image: linear-gradient(to right, darken(@lightMint, 55%), darken(@lightMint, 85%));
+        box-sizing: border-box;
+
+        &:after {
+          position: relative;
+          font-size: 0;
+          margin: auto;
+          left: -10px;
+          top: -52px;
+          display: block;
+          height: 64px;
+          width: 290px;
+          padding: 0;
+          border-radius: 10px;
+          content: "";
+          background: linear-gradient(to right, rgba(74, 74, 74, 0.5, rgba(255, 255, 255, 0.3))); /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+          box-shadow: inset -10px 0 10px 1px darken(@lightGreyColor, 10%), 0 0 5px 1px darken(@lightGreyColor, 30%);
+        }
+
+        &:hover {
+          box-shadow: 0 0 10px 1px @middleGreyColor, 0 0 30px 1px @lightGreyColor;
+
+        }
+        &:active {
+          transform: scale(0.7);
+          box-shadow: 0 0 5px 1px @middleGreyColor, 0 0 35px 1px @lightGreyColor;
+        }
+        &:focus {
+          outline: none;
+
+        }
+
+        a {
+          text-decoration: none;
+          color: @lightGreyColor;
+          display: block;
+          height: 100%;
+          width: 100%;
+          font-family: 'Play', sans-serif;
+          font-size: 20px;
+          line-height: 40px;
+          margin: 0;
+          z-index: 5;
+        }
+
+      }
+      button.booking:hover a {
+        color: #fff5c3;
+      }
+
+      a {
+        grid-area: down;
+        text-decoration: none;
+        color: @lightGreyColor;
+        height: 60px;
+        width: 60px;
+        position: relative;
+        justify-self: end;
+
+        &:hover {
+          color: #fff5c3;
+        }
+        button.down {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          padding: 0;
+          margin: 10px;
+          font-weight: bold;
+          font-family: 'Arimo', sans-serif;
+          background-image: linear-gradient(to bottom, darken(@lightMint, 55%), darken(@lightMint, 85%));
+          box-sizing: border-box;
+          color: @lightGreyColor;
+          font-size: 20px;
+          line-height: 40px;
+          transform: rotate(90deg);
+
+          &:after {
+            position: relative;
+            font-size: 0;
+            left: -5px;
+            top: -45px;
+            display: block;
+            height: 50px;
+            width: 50px;
+            padding: 0;
+            border-radius: 10px;
+            content: "";
+            background: linear-gradient(to bottom, rgba(74, 74, 74, 0.5, rgba(255, 255, 255, 0.3))); /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+            box-shadow: inset 0 10px 2px 2px darken(@lightGreyColor, 10%), 0 0 5px 3px darken(@lightGreyColor, 30%);
+
+          }
+
+          &:hover {
+            box-shadow: 0 0 10px 1px @middleGreyColor, 0 0 30px 1px @lightGreyColor;
+            color: #fff5c3;
+
+          }
+          &:active {
+            transform: scale(0.7);
+            box-shadow: 0 0 5px 1px @middleGreyColor, 0 0 35px 1px @lightGreyColor;
+          }
+          &:focus {
+            outline: none;
+
+          }
+
+        }
+      }
+    }
+    #navigation {
+      margin: 0;
+      grid-area: nav;
+      position: fixed;
+      background-color: @lightGreyColor;
+
+
+      .menu {
+        padding: 0;
+        font-size: 0;
+        margin-top: 15%;
+        box-shadow: 3px 0 10px 1px darken(@lightGreyColor, 55%);
+        border-radius: 0 10px 10px 0;
+        border: 1px solid darken(@lightGreyColor, 15%);
+        position: fixed;
+        width: 43px;
+        transition: width 0.3s linear;
+
+        &:hover {
+          transition: width 0.3s linear;
+          //width: 200px;
+        }
+
+        button {
+          position: relative;
+          width: 100%;
+          height: 60px;
+          display: inline-block;
+          background-image: linear-gradient(to right, darken(@lightMint, 10%), 50%, darken(@lightMint, 5%));
+          padding: 0;
+
+          &:not(:first-child) {
+            border-radius: 0;
+            margin-top: -2px;
+          }
+
+          &:first-child {
+            border-radius: 0 10px 0 0;
+          }
+          &:last-child {
+            border-radius: 0 0 10px 0;
+          }
+
+          .main::before {
+            content: url(../../icons/black/iconCrown.svg);
+          }
+
+          .path::before {
+            content: url(../../icons/black/iconPath.svg);
+          }
+
+          a[rel="rules"]::before {
+            content: url(../../icons/white/iconRules.svg);
+          }
+          a[rel="cafeAndShopping"]::before {
+            content: url(../../icons/white/iconShopping.svg);
+          }
+          a[rel="train"]::before {
+            content: url(../../icons/white/iconTrain.svg);
+          }
+          a[rel="bus"]::before {
+            content: url(../../icons/white/iconBus.svg);
+          }
+          a[rel="car"]::before {
+            content: url(../../icons/white/iconCar.svg);
+          }
+
+          a[rel="taxi"]::before {
+            content: url(../../icons/white/iconTaxi.svg);
+          }
+          .way::before {
+            content: url(../../icons/black/iconWay.svg);
+          }
+
+          .gallery::before {
+            content: url(../../icons/black/iconCamera.svg);
+          }
+          .timetable::before {
+            content: url(../../icons/black/iconTimetable.svg);
+          }
+
+          .menu-item {
+            position: absolute;
+            transition: width 0.3s linear;
+            top: 0;
+            overflow: hidden;
+            height: 100%;
+            font-size: 22px;
+            text-align: left;
+            line-height: 60px;
+            display: inline-block;
+            text-indent: 7px;
+            font-family: 'Play', sans-serif;
+
+            &:not(.first) {
+              border-radius: 0;
+              margin-top: -2px;
+            }
+
+            &.first {
+              border-radius: 0 10px 0 0;
+            }
+            &.last {
+              border-radius: 0 0 10px 0;
+            }
+          }
+
+          a.menu-item {
+
+            transition: box-shadow 0.3s linear;
+            overflow: hidden;
+            box-shadow: inset 20px 0 100px 6px darken(@lightGreyColor, 35%);
+            width: 0;
+            left: 0;
+            .grayGradient(darken(@lightMint, 30%), darken(@lightMint, 10%));
+            color: #fff;
+            text-decoration: none;
+          }
+
+          span.menu-item {
+            width: 100%;
+            right: 0;
+            color: darken(@mint, 80%);
+          }
+
+          ul.sub-menu {
+            list-style-type: none;
+            padding: 0;
+            font-size: 0;
+            position: absolute;
+            width: 0;
+            top: 0;
+            left: 100%;
+            margin-top: -2px;
+            display: block;
+            color: darken(@mint, 70%);
+            overflow: hidden;
+            transition: width 0.3s linear;
+
+            li {
+              position: relative;
+              width: 100%;
+              height: 60px;
+              display: inline-block;
+              .grayGradient(darken(@lightMint, 14%), @lightMint);
+              box-shadow: inset 3px 2px 50px 1px darken(@lightMint, 12%);
+              overflow: hidden;
+              border-left: 0;
+              transition: width 0.3s linear;
+              border-bottom: 1px solid @lightMint;
+
+              &:not(:first-child) {
+                border-radius: 0;
+                margin-top: -2px;
+
+              }
+
+              &:first-child {
+                border-radius: 0 10px 0 0;
+
+              }
+              &:last-child {
+                border-radius: 0 0 10px 0;
+                border-bottom: none;
+
+              }
+
+              a {
+                font-size: 20px;
+                line-height: 60px;
+                font-family: 'Play', sans-serif;
+                color: #fff;
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin-top: -2px;
+                text-align: left;
+                text-indent: 7px;
+              }
+            }
+          }
+          &:focus {
+            outline: none;
+
+          }
+          &:active {
+            a.menu-item {
+              width: 100%;
+              overflow: hidden;
+              .grayGradient(darken(@lightMint, 50%), darken(@lightMint, 12%));
+
+              //background-image: linear-gradient(to right, darken(@lightMint, 50%), 30%, darken(@lightMint, 12%));
+
+            }
+            span.menu-item {
+              overflow: hidden;
+            }
+          }
+          &:hover {
+            .main::before {
+              content: url(../../icons/white/iconCrown.svg);
+            }
+            .path::before {
+              content: url(../../icons/white/iconPath.svg);
+            }
+            .way::before {
+              content: url(../../icons/white/iconWay.svg);
+            }
+            .gallery::before {
+              content: url(../../icons/white/iconCamera.svg);
+            }
+            .timetable::before {
+              content: url(../../icons/white/iconTimetable.svg);
+            }
+
+            a.menu-item {
+              transition: width 0.3s linear;
+              width: 100%;
+              overflow: hidden;
+
+            }
+            span.menu-item {
+              overflow: hidden;
+            }
+
+            > ul.sub-menu {
+              transition: width 0.3s linear;
+              width: 100%;
+              border-radius: 0 10px 10px 0;
+              box-shadow: 3px 0 10px 1px darken(@lightGreyColor, 55%);
+
+              > li:hover {
+                .grayGradient(darken(@lightMint, 12%), darken(@lightMint, 30%));
+
+                //background-image: linear-gradient(to right, darken(@lightMint, 12%), 60%, darken(@lightMint, 30%));
+              }
+
+              > li:active {
+                .grayGradient(darken(@lightMint, 12%), darken(@lightMint, 50%));
+
+                //background-image: linear-gradient(to right, darken(@lightMint, 12%), 60%, darken(@lightMint, 50%));
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .main-content {
+      grid-area: section;
+      padding: 5px;
+      font-family: 'Arimo', sans-serif;
+
+      #scroll {
+        position: relative;
+        left: -10px;
+        top: 0;
+        width: 5px;
+        height: 5px;
+        //background-color: red;
+        box-sizing: border-box;
+      }
+      #path {
+        color: red;
+        font-family: 'Play', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        //position: relative;
+        line-height: 50px;
+        width: 300px;
+        margin: auto;
+        float: none;
+      }
+      img {
+        border-radius: 25%;
+        margin-left: 30px;
+        position: relative;
+        border: 1px solid #ffffff;
+
+      }
+
+      p {
+        margin: 20px;
+        padding: 0;
+        text-indent: 20px;
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: red;
+      }
+
+    }
+
+    #footer1 {
+      grid-area: footer1;
+      background-color: @middleGreyColor;
+      padding: 0;
+      margin: 0;
+      //height: 100%;
+      //width: 100%;
+      position: relative;
+      ul.social-wrapper {
+        display: none;
+      }
+
+      #copyright {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-family: 'Play', sans-serif;
+      }
+    }
+      #footer2 {
+        display: none;
+
+
+      }
+
+    }}
+
+
+
+
+
+

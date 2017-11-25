@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="24" height="21">
+<path d="M50,100 a 50 50 0 0 1 50 -50 h600 a 50 50 0 0 1 50 50 v500 a 50 50 0 0 1 -50 50 h-600 a 50 50 0 0 1 -50 -50
+          v-500
+ m275,100 a 75 75 0 0 1 150 0 a 75 75 0 0 1 -150 0
+ m10,125 h130 v200 a 50 50 0 0 1 -40 50
+h-50 a 50 50 0 0 1 -40 -50 v-200" fill-rule="evenodd" fill="#ffffff" id="rules">
+    </path>
+</svg>

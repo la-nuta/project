@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="24" height="21">
+    <path d="M50,50 l150 200 l90 -100 v180 h50 v70 h-50 v250 h-190 a 50 50 0 0 1 -50 -50 v-550
+
+    m400,100 l130 110 l140 -190 v530 a 50 50 0 0 1 -50 50 h-230 v-250 h-50 v-70 h50 z"
+          fill="#ffffff" fill-rule="evenodd" id="path">
+    </path>
+
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="24" height="21">
+    <path d="M50,350 a 350 300 0 0 1 700 0 a 350 300 0 0 1 -700 0 m100, 0 a 250 200 0 0 1 500 0 a 250 200 0 0 1 -500 0
+    m240,20 v-160 h20 v120
+    m0,0 h130 v40 h-150" fill-rule="evenodd" id="timetable">
+
+    </path>
+
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1100" width="255" height="255">
+    <defs>
+        <radialGradient id="radialFillCrown" cx="50%" cy="50%" r="50%" fx="85%" fy="60%">
+            <stop offset="0%" stop-color="#fffc71"/>
+            <stop offset="90%" stop-color="#d3960d"/>
+        </radialGradient>
+
+        <radialGradient id="radialFillText" cx="55%" cy="45%" r="60%" fx="90%" fy="30%">
+            <stop offset="0%" stop-color="#fffc71"/>
+            <stop offset="70%" stop-color="#d3960d"/>
+            <!--<stop offset="90%" stop-color="#e48f0c"/>-->
+            <stop offset="100%" stop-color="#fffc71"/>
+        </radialGradient>
+        <radialGradient id="radialFillBack" cx="50%" cy="50%" r="50%" fx="85%" fy="60%">
+            <stop offset="0%" stop-color="#ff623b"/>
+            <stop offset="60%" stop-color="#ff0911"/>
+            <stop offset="100%" stop-color="#e50710"/>
+        </radialGradient>
+        <radialGradient id="radialFillRound" cx="50%" cy="50%" r="70%" fx="85%" fy="70%">
+            <stop offset="0%" stop-color="#b1afaf"/>
+            <stop offset="50%" stop-color="#dedcdc"/>
+            <stop offset="90%" stop-color="#595858"/>
+        </radialGradient>
+
+        <path d="M110,550 a 440 440 0 1 0 880 0 " id="textPathLogo"/>
+    </defs>
+    <path d="M0,550 a 550 550 0 1 0 1100 0 a 550 550 0 1 0 -1100 0 m50,0 a 500 500 0 1 0 1000 0 a 500 500 0 1 0 -1000 0"
+
+          fill-rule="evenodd" fill="url(#radialFillRound)">
+    </path>
+
+        <!--<path d="M260,500 a 240 240 0 1 0 480 0 a 240 240 0 1 0 -480 0"-->
+
+              <!--fill-rule="evenodd" fill="transparent" stroke-dasharray="8" stroke="red" stroke-width="480"-->
+              <!--stroke-opacity="0.7">-->
+        <!--</path>-->
+
+    <path d="M50,550 a 500 500 0 1 0 1000 0 a 500 500 0 1 0 -1000 0"
+
+          fill-rule="evenodd" fill="url(#radialFillBack)">
+    </path>
+        <path d="M170,295 l 265 150 l 115 -255 l 115 255 l 30 -20
+v60 h15 v20 h-15 v60
+l -90 70 l -58 -150 l -58 150 l -160 -90 l70 210
+a 120 30 0 0 0 295 0
+l50 -170 v-80 h-15 v-20 h15 v-90 l184 -100
+l-165 525
+a 215 50 0 0 1 -430 0  z"
+              fill-rule="evenodd" fill="url(#radialFillCrown)" id="logo1">
+        </path>
+
+        <text x="255" y="220" text-anchor="start" fill="url(#radialFillText)" stroke="#9a6108" stroke-width="2"
+              style="font-size: 95px; font-weight: bold" font-family="sans-serif"
+              letter-spacing="2">
+            <textPath href="#textPathLogo">El Caminito del Rey</textPath>
+        </text>
+</svg>

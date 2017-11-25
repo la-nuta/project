@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Booking</title>
+    <link rel="stylesheet" href="../styles/styleBooking.css">
+    <script defer src="https://use.fontawesome.com/29bd6817a0.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Play:400,700&subset=cyrillic');
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <header id="header">
+        <a href="./../index.html" class="logo">
+            <img src="../Logo.svg" width="255px" height="255px">
+        </a>
+        <h1> Регистрация визита </h1>
+
+    </header>
+
+
+    <nav id="navigation">
+        <div class="menu">
+            <button type="button" id="main">
+                <span class="menu-item first main">
+                    Ретроспектива
+                </span>
+                <a href="./../index.html#scroll" class="menu-item first main">
+                    Ретроспектива
+                </a>
+
+            </button>
+            <button type="button" class="path">
+                <span class="menu-item path"> Визиты тропы </span>
+                <a href="./../path/index.html" class="menu-item path"> Визиты тропы </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="./../path/index.html/#rules" rel="rules">
+                            Правила посещения
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../path/index.html/#cafeAndShopping" rel="cafeAndShopping">
+                            Кафе и сувениры
+                        </a>
+                    </li>
+                </ul>
+            </button>
+            <button type="button" class="way">
+                <span class="menu-item way">
+                    Как добраться
+                </span>
+                <a href="./../wayToGet/index.html" class="menu-item way"> Как добраться </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="./../wayToGet/index.html/#car" rel="car">
+                            Авто
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../wayToGet/index.html/#train" rel="train">
+                            Поезд
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../wayToGet/index.html/#bus" rel="bus">
+                            Автобус
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../wayToGet/index.html/#taxi" rel="taxi">
+                            Такси
+                        </a>
+                    </li>
+                </ul>
+            </button>
+
+
+            <button type="button" class="gallery">
+                <span class="menu-item gallery"> Фотогалерея </span>
+                <a href="./../gallery/index.html" class="menu-item gallery"> Фотогалерея </a>
+            </button>
+
+            <button type="button" class="timetable">
+                <span class="menu-item last timetable"> Время работы </span>
+                <a href="./../timetable/index.html" class="menu-item last timetable"> Время работы </a>
+            </button>
+        </div>
+    </nav>
+    <section class="main-content">
+
+        <fieldset id="formWrapper">
+            <legend>Заполните форму регистрации</legend>
+
+            <form>
+                <label for="name" spellcheck="false">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите Ваше имя"   required>
+
+                <!--pattern="[А-Яа-яЁё]" -->
+
+                <label for="surname" spellcheck="false">Фамилия</label>
+                <input type="text" id="surname" name="surname" placeholder="Введите Вашу фамилию.." required>
+
+                <!--pattern="[А-Яа-яЁё]" -->
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Введите адрес электронной почты.." required>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" maxlength="9" placeholder="Введите номер телефона..">
+
+                <label for="peopleNumber">Состав группы</label>
+                <!--<input type="number" id="peopleNumber" min="1"-->
+                <!--name="peopleNumber" maxlength="2" placeholder="Выберите количество человек.." required>-->
+                <select id="peopleNumber" name="peopleNumber">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <label for="date">Дата визита</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Время визита</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="country">Страна</label>
+                <select id="country" name="country">
+                    <option value="belarus">Беларусь</option>
+                    <option value="latvia">Латвия</option>
+                    <option value="lithuania">Литва</option>
+                    <option value="poland">Польша</option>
+                    <option value="ukrain">Украина</option>
+                    <option value="another">иная</option>
+                </select>
+
+                <label for="message">Пожелания</label>
+                <textarea id="message" name="message" placeholder="Дополнительные пожелания.."
+                          spellcheck="true" rows="5">
+
+    </textarea>
+
+                <label id="inputGroup">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Я ознакомлен с правилами посещения тропы</span>
+                </label>
+
+                <div id="resultButtons">
+                    <button type="reset" value="reset" id="reset">Очистить форму</button>
+                    <button value="submit" id="submit">Регистрация</button>
+                </div>
+
+            </form>
+        </fieldset>
+
+
+    </section>
+    <footer id="footer1">
+        <ul class="social-wrapper">
+            <li class="one-button">
+                <a class="fa fa-twitter fa-2x" href="https://www.twitter.com" rel="twitter"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-facebook fa-2x" href="https://www.facebook.com" rel="facebook"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com" rel="linkedin"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-youtube fa-2x" href="https://www.youtube.com" rel="youtube"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-github fa-2x" href="https://www.github.com" rel="github"
+                   target="_blank"></a>
+            </li>
+            <li class="one-button">
+                <a class="fa fa-instagram fa-2x" href="https://www.instagram.com" rel="instagram"
+                   target="_blank"></a>
+            </li>
+        </ul>
+
+        <span id="copyright">&copy Anna Marfel, 2017</span>
+
+    </footer>
+    <footer id="footer2">
+        <form action="http://google.com/search" method="get" class="search">
+            <label for="search"> Найти </label> <input type="search" name="q" id="search" placeholder=" в Google...">
+
+        </form>
+    </footer>
+
+</div>
+
+</body>
+</html>
+

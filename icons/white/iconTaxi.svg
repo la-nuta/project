@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="24" height="21">
+    <path d="M50,400 h150 v150 h-150 v-150 m250,0 h150 v150 h-150 v-150 m250,0 h150 v150 h-150 v-150
+m-375,-150 h150 v150 h-150 v-150 m250,0 h150 v150 h-150 v-150"
+          fill="#ffffff" fill-rule="evenodd" id="taxi">
+    </path>
+</svg>
